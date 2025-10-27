@@ -7,7 +7,7 @@ public class Car {
     private int price;
     private String regnum;
 
-    public Car(int id, String brand, String model, int year, String color, int price, String regnum){
+    public Car(int id, String brand, String model, int year, String color, int price, String regnum) {
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -18,58 +18,58 @@ public class Car {
     }
     
     //id
-    public int getId(){
+    public int getId() {
         return id;
     }
-    public void setId(int id){
+    public void setId(int id) {
         this.id = id;
     }
 
     //brand
-    public String getBrand(){
+    public String getBrand() {
         return brand;
     }
-    public void setBrand(String brand){
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 
     //model
-    public String getModel(){
+    public String getModel() {
         return model;
     }
-    public void setModel(String model){
+    public void setModel(String model) {
         this.model = model;
     }
 
     //year
-    public int getYear(){
+    public int getYear() {
         return year;
     }
-    public void setYear(int year){
+    public void setYear(int year) {
         this.year = year;
     }
 
     //color
-    public String getColor(){
+    public String getColor() {
         return color;
     }
-    public void setColor(String color){
+    public void setColor(String color) {
         this.color = color;
     }
 
     //price
-    public int getPrice(){
+    public int getPrice() {
         return price;
     }
-    public void setPrice(int price){
+    public void setPrice(int price) {
         this.price = price;
     }
 
     //regnum
-    public String getReNum(){
+    public String getReNum() {
         return regnum;
     }
-    public void setRegNum(String regnum){
+    public void setRegNum(String regnum) {
         this.regnum = regnum;
     }
 }
