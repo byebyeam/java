@@ -1,4 +1,5 @@
 package com.sibsutis.devices;
+
 public class PersonalComputer() extends Devices {
     public PersonalComputer(int id, int price) {
         super(id, price, null);
