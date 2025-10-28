@@ -27,5 +27,4 @@ public abstract class Device implements Printable {
     }
 
     public abstract String getDeviceType();
-
 }
