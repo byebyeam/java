@@ -49,4 +49,13 @@ public class Cache<T> {
             return null;
         }
     }
+
+    public T getItemByIndex(int i) {
+        if (cacheObjects.contains(i)) {
+            return cacheObjects.get(i);
+        }
+        else {
+            return null;
+        }
+    }
 }
