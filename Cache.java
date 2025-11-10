@@ -40,4 +40,13 @@ public class Cache<T> {
             return null;
         }
     }
+
+    public T getLast() {
+        if (cacheObjects.contains(cacheObjects.size() - 1)) {
+            return cacheObjects.get(cacheObjects.size() - 1);
+        }
+        else {
+            return null;
+        }
+    }
 }
