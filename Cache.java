@@ -9,7 +9,7 @@ public class Cache<T> {
         this.cacheObjects = new ArrayList<T>();
     }
 
-    
+
     //methods:
     public void add(T item) {
         cacheObjects.add(item);
@@ -51,7 +51,7 @@ public class Cache<T> {
     }
 
     public T getItemByIndex(int i) {
-        if (cacheObjects.contains(i)) {
+        if (cacheObjects.size() >= i) {
             return cacheObjects.get(i);
         }
         else {
