@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Deque;
 
 public class Cache<T> {
     private int n;
