@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class Cache<T> {
     private int n;
+    private ArrayList<T> cacheObjects;
 
     public Cache(int n) {
         this.n = n;
+        this.cacheObjects = new ArrayList<T>();
     }
 
-    ArrayList<T> cacheObjects = new ArrayList<T>(); {
-        if (cacheObjects.size() > n) {
-            cacheObjects.remove(0);
-        }
-    }
-
+    
     //methods:
     public void add(T item) {
         cacheObjects.add(item);
+        if (cacheObjects.size() > n) {
+            cacheObjects.remove(0);
+        }
     }
     
     public boolean remove(T item) {
@@ -33,7 +33,7 @@ public class Cache<T> {
     }
 
     public T getFirst() {
-        if (cacheObjects.contains(0)) {
+        if (!cacheObjects.isEmpty()) {
             return cacheObjects.get(0);
         }
         else {
@@ -42,7 +42,7 @@ public class Cache<T> {
     }
 
     public T getLast() {
-        if (cacheObjects.contains(cacheObjects.size() - 1)) {
+        if (cacheObjects.size() == n) {
             return cacheObjects.get(cacheObjects.size() - 1);
         }
         else {
