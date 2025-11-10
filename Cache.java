@@ -29,12 +29,10 @@ public class Cache<T> {
     }
     
     public boolean exists(T item) {
-        if (cacheObjects.contains(item)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return cacheObjects.contains(item);
     }
-    
+
+    public T getFirst() {
+        return cacheObjects.get(0);
+    }
 }
