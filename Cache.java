@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Deque;
+
+public class Cache<T> {
+    private int n;
+
+    public Cache(int n) {
+        this.n = n;
+    }
+
+    ArrayList<T> cacheObjects = new ArrayList<T>(); {
+        if (cacheObjects.size() > n) {
+            cacheObjects.remove(0);
+        }
+    }
+}
