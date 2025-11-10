@@ -17,4 +17,14 @@ public class Cache<T> {
     public void add(T item) {
         cacheObjects.add(item);
     }
+    
+    public boolean remove(T item) {
+        if (cacheObjects.contains(item)) {
+            cacheObjects.remove(item);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
