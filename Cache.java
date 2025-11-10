@@ -12,4 +12,9 @@ public class Cache<T> {
             cacheObjects.remove(0);
         }
     }
+
+    //methods:
+    public void add(T item) {
+        cacheObjects.add(item);
+    }
 }
