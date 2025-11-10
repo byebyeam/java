@@ -33,6 +33,11 @@ public class Cache<T> {
     }
 
     public T getFirst() {
-        return cacheObjects.get(0);
+        if (cacheObjects.contains(0)) {
+            return cacheObjects.get(0);
+        }
+        else {
+            return null;
+        }
     }
 }
