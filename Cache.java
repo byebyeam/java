@@ -27,4 +27,13 @@ public class Cache<T> {
             return false;
         }
     }
+    
+    public boolean exists(T item) {
+        if (cacheObjects.contains(item)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
